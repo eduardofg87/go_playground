@@ -7,15 +7,18 @@ import (
 
 )
 var (
-    outfile, _ = os.Create("my.log") 
+    outfile, _ = os.Create("some.log") 
     l          = log.New(outfile, "", 0)
 )
 
 func main() {
-    l.Println("hello, log!!!")
+    //first type of log
+    l.Println("Some log")
+    //second type of log
     logrous.WithFields(logrous.Fields{
       "animal": "walrus",
       "number": 1,
       "size":   10,
     }).Info("A walrus appears")   
+    
 }
