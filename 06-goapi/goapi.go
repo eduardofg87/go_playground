@@ -1,4 +1,4 @@
-package main
+gormpackage main
 
 import (
 	"encoding/json"
